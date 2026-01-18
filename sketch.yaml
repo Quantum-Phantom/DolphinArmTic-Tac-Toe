@@ -1,0 +1,16 @@
+profiles:
+  profile-1768267298981:
+    fqbn: arduino:avr:uno
+    platforms:
+      - platform: arduino:avr (1.8.6)
+    programmer: ""
+    port: ""
+    port_config:
+      baudrate: "9600"
+      lineEnding: "\r\n"
+      bits: "8"
+      parity: none
+      stop_bits: one
+    libraries:
+      - Servo (1.3.0)
+default_profile: profile-1768267298981
