@@ -1,4 +1,4 @@
-c:\Users\youth\Documents\C_Homework\ttt\build\build_profile-1768267298981\core\USBCore.cpp.o: \
+C:\Users\youth\Documents\C_Homework\tic-tac-toe\build\build_profile-1768267298981\core\USBCore.cpp.o: \
  C:\Users\youth\AppData\Local\Arduino15\internal\arduino_avr_1.8.6_78e0815c6047bc54\cores\arduino\USBCore.cpp \
  C:\Users\youth\AppData\Local\Arduino15\internal\arduino_avr_1.8.6_78e0815c6047bc54\cores\arduino\USBAPI.h \
  C:\Users\youth\AppData\Local\Arduino15\internal\arduino_avr_1.8.6_78e0815c6047bc54\cores\arduino\Arduino.h \

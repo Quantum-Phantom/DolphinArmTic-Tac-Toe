@@ -1,4 +1,4 @@
-c:\Users\youth\Documents\C_Homework\ttt\build\build_profile-1768267298981\libraries\Servo\avr\Servo.cpp.o: \
+C:\Users\youth\Documents\C_Homework\tic-tac-toe\build\build_profile-1768267298981\libraries\Servo\avr\Servo.cpp.o: \
  C:\Users\youth\AppData\Local\Arduino15\internal\Servo_1.3.0_497671ba0520c8c4\Servo\src\avr\Servo.cpp \
  C:\Users\youth\AppData\Local\Arduino15\internal\arduino_avr_1.8.6_78e0815c6047bc54\cores\arduino/Arduino.h \
  C:\Users\youth\AppData\Local\Arduino15\internal\arduino_avr_1.8.6_78e0815c6047bc54\cores\arduino/binary.h \

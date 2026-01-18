@@ -1,4 +1,4 @@
-c:\Users\youth\Documents\C_Homework\ttt\build\build_profile-1768267298981\core\HardwareSerial2.cpp.o: \
+C:\Users\youth\Documents\C_Homework\tic-tac-toe\build\build_profile-1768267298981\core\HardwareSerial2.cpp.o: \
  C:\Users\youth\AppData\Local\Arduino15\internal\arduino_avr_1.8.6_78e0815c6047bc54\cores\arduino\HardwareSerial2.cpp \
  C:\Users\youth\AppData\Local\Arduino15\internal\arduino_avr_1.8.6_78e0815c6047bc54\cores\arduino\Arduino.h \
  C:\Users\youth\AppData\Local\Arduino15\internal\arduino_avr_1.8.6_78e0815c6047bc54\cores\arduino\binary.h \

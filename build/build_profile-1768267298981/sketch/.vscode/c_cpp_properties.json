@@ -1,21 +1,21 @@
-#line 1 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\.vscode\\c_cpp_properties.json"
+#line 1 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\.vscode\\c_cpp_properties.json"
 {
   "configurations": [
     {
       "name": "Arduino",
       "includePath": [
         "C:\\Users\\youth\\Documents\\Arduino\\libraries/**",
-        "C:\\Users\\youth\\Documents\\C_Homework\\ttt/**",
-        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino/**",
-        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard/**",
-        "C:\\Users\\youth\\Documents\\Arduino\\libraries\\Servo\\src/**"
+        "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe/**",
+        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino/**",
+        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard/**",
+        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src/**"
       ],
       "forcedInclude": [
-        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Arduino.h"
+        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Arduino.h"
       ],
-      "compilerPath": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+      "compilerPath": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
       "compilerArgs": [
-        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+        "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
         "-c",
         "-g",
         "-Os",
@@ -34,12 +34,12 @@
         "-DARDUINO=10607",
         "-DARDUINO_AVR_UNO",
         "-DARDUINO_ARCH_AVR",
-        "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-        "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-        "-IC:\\Users\\youth\\Documents\\Arduino\\libraries\\Servo\\src",
-        "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\sketch\\ttt.ino.cpp",
+        "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
+        "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
+        "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
+        "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\sketch\\ttt.ino.cpp",
         "-o",
-        "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\sketch\\ttt.ino.cpp.o"
+        "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\sketch\\ttt.ino.cpp.o"
       ],
       "defines": [
         "F_CPU=16000000L",

@@ -10,9 +10,9 @@
   },
   {
     "compile": {
-      "source_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\sketch\\ttt.ino.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\sketch\\ttt.ino.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\sketch\\ttt.ino.cpp.d"
+      "source_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\sketch\\tic-tac-toe.ino.cpp",
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\sketch\\tic-tac-toe.ino.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\sketch\\tic-tac-toe.ino.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -42,7 +42,7 @@
         "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
         "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
         "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
-        "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\sketch\\ttt.ino.cpp",
+        "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\sketch\\tic-tac-toe.ino.cpp",
         "-o",
         "nul"
       ]
@@ -54,8 +54,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\avr\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\avr\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\avr\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\avr\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\avr\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -97,8 +97,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\esp32\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\esp32\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\esp32\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\esp32\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\esp32\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -140,8 +140,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\mbed\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\mbed\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\mbed\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\mbed\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\mbed\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -183,8 +183,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\megaavr\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\megaavr\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\megaavr\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\megaavr\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\megaavr\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -226,8 +226,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\nrf52\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\nrf52\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\nrf52\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\nrf52\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\nrf52\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -269,8 +269,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\renesas\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\renesas\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\renesas\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\renesas\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\renesas\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -312,8 +312,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\sam\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\sam\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\sam\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\sam\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\sam\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -355,8 +355,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\samd\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\samd\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\samd\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\samd\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\samd\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -398,8 +398,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\stm32f4\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\stm32f4\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\stm32f4\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\stm32f4\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\stm32f4\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -441,8 +441,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\xmc\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\xmc\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\xmc\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\xmc\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\xmc\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [
@@ -484,8 +484,8 @@
   {
     "compile": {
       "source_path": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\zephyr\\Servo.cpp",
-      "object_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\zephyr\\Servo.cpp.o",
-      "depfile_path": "c:\\Users\\youth\\Documents\\C_Homework\\ttt\\build\\build_profile-1768267298981\\libraries\\Servo\\zephyr\\Servo.cpp.d"
+      "object_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\zephyr\\Servo.cpp.o",
+      "depfile_path": "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\zephyr\\Servo.cpp.d"
     },
     "compile_task": {
       "args": [

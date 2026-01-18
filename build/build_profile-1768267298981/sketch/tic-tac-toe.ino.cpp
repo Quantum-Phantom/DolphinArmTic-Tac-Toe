@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#line 1 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\ttt.ino"
+#line 1 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\tic-tac-toe.ino"
 #include <Servo.h>
 
 // Parameters
@@ -332,19 +332,19 @@ enum GameState {
 };
 GameState currentState = IDLE;
 
-#line 333 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\ttt.ino"
+#line 333 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\tic-tac-toe.ino"
 void setup();
-#line 357 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\ttt.ino"
+#line 357 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\tic-tac-toe.ino"
 void loop();
-#line 415 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\ttt.ino"
+#line 415 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\tic-tac-toe.ino"
 void startGame();
-#line 427 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\ttt.ino"
+#line 427 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\tic-tac-toe.ino"
 void endGame();
-#line 435 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\ttt.ino"
+#line 435 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\tic-tac-toe.ino"
 void makeArmMove();
-#line 479 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\ttt.ino"
+#line 479 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\tic-tac-toe.ino"
 bool processHumanInput();
-#line 333 "C:\\Users\\youth\\Documents\\C_Homework\\ttt\\ttt.ino"
+#line 333 "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\tic-tac-toe.ino"
 void setup() {
     Serial.begin(9600);
     

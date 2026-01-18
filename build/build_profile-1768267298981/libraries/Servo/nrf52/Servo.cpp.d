@@ -1,2 +1,2 @@
-c:\Users\youth\Documents\C_Homework\ttt\build\build_profile-1768267298981\libraries\Servo\nrf52\Servo.cpp.o: \
+C:\Users\youth\Documents\C_Homework\tic-tac-toe\build\build_profile-1768267298981\libraries\Servo\nrf52\Servo.cpp.o: \
  C:\Users\youth\AppData\Local\Arduino15\internal\Servo_1.3.0_497671ba0520c8c4\Servo\src\nrf52\Servo.cpp
