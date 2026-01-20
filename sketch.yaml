@@ -4,7 +4,7 @@ profiles:
     platforms:
       - platform: arduino:avr (1.8.6)
     programmer: ""
-    port: ""
+    port: COM3
     port_config:
       baudrate: "9600"
       lineEnding: "\r\n"

@@ -55,135 +55,11 @@
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\mbed\\Servo.cpp",
-   "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\mbed\\Servo.cpp.o"
-  ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\mbed\\Servo.cpp"
- },
- {
-  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
    "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\avr\\Servo.cpp",
    "-o",
    "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\avr\\Servo.cpp.o"
   ],
   "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\avr\\Servo.cpp"
- },
- {
-  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\megaavr\\Servo.cpp",
-   "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\megaavr\\Servo.cpp.o"
-  ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\megaavr\\Servo.cpp"
- },
- {
-  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\renesas\\Servo.cpp",
-   "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\renesas\\Servo.cpp.o"
-  ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\renesas\\Servo.cpp"
- },
- {
-  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\nrf52\\Servo.cpp",
-   "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\nrf52\\Servo.cpp.o"
-  ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\nrf52\\Servo.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -272,6 +148,68 @@
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\nrf52\\Servo.cpp",
+   "-o",
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\nrf52\\Servo.cpp.o"
+  ],
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\nrf52\\Servo.cpp"
+ },
+ {
+  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\renesas\\Servo.cpp",
+   "-o",
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\renesas\\Servo.cpp.o"
+  ],
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\renesas\\Servo.cpp"
+ },
+ {
+  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
    "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\sam\\Servo.cpp",
    "-o",
    "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\sam\\Servo.cpp.o"
@@ -303,11 +241,73 @@
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\mbed\\Servo.cpp",
+   "-o",
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\mbed\\Servo.cpp.o"
+  ],
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\mbed\\Servo.cpp"
+ },
+ {
+  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
    "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\stm32f4\\Servo.cpp",
    "-o",
    "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\stm32f4\\Servo.cpp.o"
   ],
   "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\stm32f4\\Servo.cpp"
+ },
+ {
+  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\megaavr\\Servo.cpp",
+   "-o",
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\libraries\\Servo\\megaavr\\Servo.cpp.o"
+  ],
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\Servo_1.3.0_497671ba0520c8c4\\Servo\\src\\megaavr\\Servo.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -395,11 +395,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\PluggableUSB.cpp",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\CDC.cpp",
    "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\PluggableUSB.cpp.o"
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\CDC.cpp.o"
   ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\PluggableUSB.cpp"
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\CDC.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -425,11 +425,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\CDC.cpp",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\PluggableUSB.cpp",
    "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\CDC.cpp.o"
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\PluggableUSB.cpp.o"
   ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\CDC.cpp"
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\PluggableUSB.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -485,11 +485,41 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\HardwareSerial2.cpp",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Print.cpp",
    "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\HardwareSerial2.cpp.o"
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\Print.cpp.o"
   ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\HardwareSerial2.cpp"
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Print.cpp"
+ },
+ {
+  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\HardwareSerial.cpp",
+   "-o",
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\HardwareSerial.cpp.o"
+  ],
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\HardwareSerial.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -545,11 +575,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\HardwareSerial.cpp",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Stream.cpp",
    "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\HardwareSerial.cpp.o"
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\Stream.cpp.o"
   ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\HardwareSerial.cpp"
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Stream.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -635,71 +665,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Print.cpp",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\HardwareSerial2.cpp",
    "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\Print.cpp.o"
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\HardwareSerial2.cpp.o"
   ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Print.cpp"
- },
- {
-  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Stream.cpp",
-   "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\Stream.cpp.o"
-  ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Stream.cpp"
- },
- {
-  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Tone.cpp",
-   "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\Tone.cpp.o"
-  ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Tone.cpp"
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\HardwareSerial2.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -730,6 +700,36 @@
    "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\USBCore.cpp.o"
   ],
   "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\USBCore.cpp"
+ },
+ {
+  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Tone.cpp",
+   "-o",
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\Tone.cpp.o"
+  ],
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\Tone.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -812,11 +812,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\WString.cpp",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\abi.cpp",
    "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\WString.cpp.o"
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\abi.cpp.o"
   ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\WString.cpp"
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\abi.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -842,11 +842,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
    "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\abi.cpp",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\WString.cpp",
    "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\abi.cpp.o"
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\WString.cpp.o"
   ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\abi.cpp"
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\WString.cpp"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -995,6 +995,29 @@
    "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-gcc",
    "-c",
    "-g",
+   "-x",
+   "assembler-with-cpp",
+   "-flto",
+   "-MMD",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
+   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\wiring_pulse.S",
+   "-o",
+   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\wiring_pulse.S.o"
+  ],
+  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\wiring_pulse.S"
+ },
+ {
+  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-gcc",
+   "-c",
+   "-g",
    "-Os",
    "-w",
    "-std=gnu11",
@@ -1015,29 +1038,6 @@
    "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\wiring_digital.c.o"
   ],
   "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\wiring_digital.c"
- },
- {
-  "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr-gcc_7.3.0-atmel3.6.1-arduino7_fc423089e09cfcab/bin/avr-gcc",
-   "-c",
-   "-g",
-   "-x",
-   "assembler-with-cpp",
-   "-flto",
-   "-MMD",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino",
-   "-IC:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\variants\\standard",
-   "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\wiring_pulse.S",
-   "-o",
-   "C:\\Users\\youth\\Documents\\C_Homework\\tic-tac-toe\\build\\build_profile-1768267298981\\core\\wiring_pulse.S.o"
-  ],
-  "file": "C:\\Users\\youth\\AppData\\Local\\Arduino15\\internal\\arduino_avr_1.8.6_78e0815c6047bc54\\cores\\arduino\\wiring_pulse.S"
  },
  {
   "directory": "C:\\Users\\youth\\AppData\\Local\\Programs\\Microsoft VS Code",

@@ -31,31 +31,28 @@
 
 ## 构建方法
 
+推荐使用Visual Studio Code的[Arduino Maker Workshop](https://marketplace.visualstudio.com/items?itemName=TheLastOutpostWorkshop.arduino-maker-workshop)插件。也可通过项目中的`sketch.yaml`所给profile自行使用`arduino-cli`编译和上传。
+
 ## 可调整参数
 
 在代码开头的 `BoardConfig` 结构体中可以调整以下参数：
 
 ```cpp
 struct BoardConfig {
-    // 棋盘位置（单位：毫米）
-    float centerX = 150.0;    // 棋盘中心的X坐标
-    float centerY = 200.0;    // 棋盘中心的Y坐标  
-    float centerZ = 0.0;      // 棋盘表面的Z坐标
+    float centerX = 150.0;
+    float centerY = 200.0;
+    float centerZ = 0.0;
     
-    // 格子间距（单位：毫米）
-    float cellSpacing = 30.0;  // 每个格子的间距
+    float cellSpacing = 30.0;
     
-    // 机械臂下子高度
-    float moveHeight = 80.0;   // 下子时夹爪离棋盘的高度
-    float hoverHeight = 120.0; // 悬停高度（移动时）
+    float moveHeight = 80.0;
+    float hoverHeight = 120.0;
     
-    // 下子后停留时间（毫秒）
     unsigned int dwellTime = 2000;
     
-    // 舵机角度偏移（用于微调）
-    int horizontalOffset = 0;  // 水平舵机偏移
-    int leftOffset = 0;        // 左臂舵机偏移
-    int rightOffset = 0;       // 右臂舵机偏移
+    int horizontalOffset = 0;
+    int leftOffset = 0;
+    int rightOffset = 0;
 } boardConfig;
 ```
 
@@ -226,4 +223,4 @@ tone(pin, frequency, duration);
 
 ## 联系方式
 
-如有问题或建议，欢迎反馈！
+如有问题或建议，欢迎反馈，邮箱：[dusicheng@mail.ustc.edu.cn](mailto:dusicheng@mail.ustc.edu.cn)！

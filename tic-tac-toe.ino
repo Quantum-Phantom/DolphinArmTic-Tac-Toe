@@ -13,7 +13,7 @@ struct BoardConfig {
     float cellSpacing = 30.0; // Side length of cells
 
     float moveHeight = 20.0;
-    float hoverHeight = -30.0;
+    float hoverHeight = -25.0;
     
     unsigned int dwellTime = 2000;
     
@@ -42,7 +42,8 @@ class SmartServo {
 
     void writeAngle(int angle) {
       _currentAngle = constrain(angle, _minAngle, _maxAngle);
-      _servo.write(_currentAngle);
+      //_servo.write(_currentAngle);
+      _servo.write(map(_currentAngle, 0, 180, 544, 2400));
     }
 
     void writeAngleSmooth(int targetAngle, int stepDelay = 20) {
@@ -51,7 +52,8 @@ class SmartServo {
 
       while (_currentAngle != targetAngle) {
         _currentAngle += step;
-        _servo.write(_currentAngle);
+        //_servo.write(_currentAngle);
+        _servo.write(map(_currentAngle, 0, 180, 544, 2400));
         delay(stepDelay);
       }
     }
@@ -72,7 +74,8 @@ class controller {
   public:
     unsigned long startTime;
     bool state;
-    controller(int XPin, int YPin, int buttonPin): _XPin(XPin), _YPin(YPin), _buttonPin(buttonPin), startTime(0), state(false) {}
+    controller(int XPin, int YPin, int buttonPin)
+        : _XPin(XPin), _YPin(YPin), _buttonPin(buttonPin), startTime(0), state(false) {}
 
     void begin() {
       pinMode(_buttonPin, INPUT_PULLUP);
@@ -309,7 +312,7 @@ public:
         
         // 抬起
         moveToCell(row, col, boardConfig.hoverHeight);
-        moveTo(boardConfig.homeX, boardConfig.homeY + 30, boardConfig.homeZ, 30);
+        homePosition();
     }
     
     // 初始化位置
@@ -391,17 +394,17 @@ void loop() {
             (now - joystick2.startTime >= gestureDuration)) {
             gestureRecognized = true;
             
-            if (currentState == IDLE) {
+            if (currentState != GAME_RUNNING) {
                 Serial.println("\n========================================");
                 Serial.println("              Game starts!              ");
                 Serial.println("========================================");
                 startGame();
-            } else if (currentState == GAME_RUNNING) {
+            } /*else if (currentState == GAME_RUNNING) {
                 Serial.println("\n========================================");
                 Serial.println("           Game force ended !           ");
                 Serial.println("========================================");
                 endGame();
-            }
+            }*/
         }
     }
     
@@ -468,63 +471,93 @@ void makeArmMove() {
         delay(2000);
         Serial.println("\nLong press two buttons to start a new game!");
     } else {
+        while (Serial.available()) {
+            Serial.read();
+        }
         Serial.println("\nHuman Plyer's turn! Input position (row column)");
         while (!processHumanInput()) {
             delay(200);
         }
-        
     }
 }
 
 bool processHumanInput() {
-    if (Serial.available() > 0) {
+    static int pressCount = 0;
+    static bool button2Pressed = false, lastButton1State = false;
+    int row = -1, col = -1;
+    bool receivedInput = false;
+
+    if (Serial.available() > 0) { // Input from Serial
+        receivedInput = true;
         String input = Serial.readStringUntil('\n');
+        if (input.startsWith("exit")) {
+            endGame();
+            pressCount = 0;
+            return true;
+        }
         input.trim();
-        
-        // Parse input
-        int row = -1, col = -1;
-        if (sscanf(input.c_str(), "%d %d", &row, &col) == 2) {
-            if (row >= 0 && row <= 2 && col >= 0 && col <= 2) {
-                if (game.makeMove(row, col, 'O')) {
-                    Serial.print("Human player makes the move: [");
-                    Serial.print(row);
-                    Serial.print("][");
-                    Serial.print(col);
-                    Serial.println("]");
-                    game.printBoard();
-                    
-                    // Check if there is winner
-                    char winner = game.checkWinner();
-                    if (winner == 'O') {
-                        Serial.println("\n========================================");
-                        Serial.println("Human won!");
-                        Serial.println("========================================");
-                        currentState = GAME_OVER;
-                        delay(2000);
-                        Serial.println("\nLong press two buttons to start a new game!");
-                    } else if (game.isFull()) {
-                        Serial.println("\n========================================");
-                        Serial.println("Draw!");
-                        Serial.println("========================================");
-                        currentState = GAME_OVER;
-                        delay(2000);
-                        Serial.println("\nLong press two buttons to start a new game!");
-                    } else {
-                        // Dolphin's turn
-                        delay(1000);
-                        makeArmMove();
-                    }
-                    return true;
-                } else {
-                    Serial.println("Occupied! Choose another position");
-                }
-            } else {
-                Serial.println("Invalid input! Row/Column must be 0-2");
-            }
-        } else {
+
+        if (sscanf(input.c_str(), "%d %d", &row, &col) != 2) {
             Serial.println("Invalid format! Input row-num col-num");
             Serial.println("");
+            return false;
+        } else if (row < 0 || row > 2 || col < 0 || col > 2)  {
+            Serial.println("Invalid input! Row/Column must be 0-2");
+            return false;
         }
+    } else if (joystick2.refresh()) { // Input by button
+        receivedInput = true;
+        if (pressCount > 8) {
+            Serial.println("Invalid input! Press 0~8 times");
+            pressCount = 0;
+            return false;
+        }
+        row = pressCount / 3;
+        col = pressCount % 3;
+        pressCount = 0;
+    } else {
+        bool currentButton1State = joystick1.refresh();
+        if (currentButton1State && !lastButton1State) {
+            pressCount++;
+            Serial.print("Count: ");
+            Serial.print(pressCount);
+            delay(50);
+        }
+        lastButton1State = currentButton1State;
     }
-    return false;
+
+    if (receivedInput && game.makeMove(row, col, 'O')) {
+        Serial.print("Human player makes the move: [");
+        Serial.print(row);
+        Serial.print("][");
+        Serial.print(col);
+        Serial.println("]");
+        game.printBoard();
+        pressCount = 0;
+                    
+        // Check if there is winner
+        if (game.checkWinner() == 'O') {
+            Serial.println("\n========================================");
+            Serial.println("Human won!");
+            Serial.println("========================================");
+            currentState = GAME_OVER;
+            delay(2000);
+            Serial.println("\nLong press two buttons to start a new game!");
+        } else if (game.isFull()) {
+            Serial.println("\n========================================");
+            Serial.println("Draw!");
+            Serial.println("========================================");
+            currentState = GAME_OVER;
+            delay(2000);
+            Serial.println("\nLong press two buttons to start a new game!");
+        } else {
+            // Dolphin's turn
+            delay(1000);
+            makeArmMove();
+        }
+        return true;
+    } else if (receivedInput) {
+        Serial.println("Occupied! Choose another position");
+        return false;
+    }
 }
