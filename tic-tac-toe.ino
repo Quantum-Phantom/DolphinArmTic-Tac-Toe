@@ -2,7 +2,7 @@
 
 // Parameters
 struct BoardConfig {
-    float centerX = -195.0;
+    float centerX = -200.0;
     float centerY = 0.0; // Vertical
     float centerZ = 0.0;
     
