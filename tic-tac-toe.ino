@@ -10,10 +10,10 @@ struct BoardConfig {
     float homeY = -24.0;
     float homeZ = -100.0;
 
-    float cellSpacing = 30.0; // Side length of cells
+    float cellSpacing = 50.0; // Side length of cells
 
     float moveHeight = 20.0;
-    float hoverHeight = -25.0;
+    float hoverHeight = -0.0;
     
     unsigned int dwellTime = 2000;
     
@@ -296,7 +296,7 @@ public:
         // 在起点夹取棋子
         claw.writeAngle(25);
         delay(500);
-        moveTo(boardConfig.homeX, boardConfig.homeY, boardConfig.homeZ, 30);
+        moveTo(boardConfig.homeX, boardConfig.homeY - 5, boardConfig.homeZ, 30);
         claw.writeAngle(0);
         delay(500);
 
@@ -305,13 +305,13 @@ public:
         delay(500);
         
         // 在棋盘高度落子
-        moveToCell(row, col, boardConfig.moveHeight);
-        delay(500);
+        // moveToCell(row, col, boardConfig.moveHeight);
+        // delay(500);
         claw.writeAngle(25);
         delay(500);
         
         // 抬起
-        moveToCell(row, col, boardConfig.hoverHeight);
+        moveToCell(row, col, boardConfig.hoverHeight - 15);
         homePosition();
     }
     
