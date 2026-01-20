@@ -2,25 +2,20 @@
 
 // Parameters
 struct BoardConfig {
-    float centerX = -210.0;
+    float centerX = -195.0;
     float centerY = 0.0; // Vertical
     float centerZ = 0.0;
     
     float homeX = -220.0;
     float homeY = -24.0;
-    float homeZ = -100.0;
+    float homeZ = -140.0;
 
-    float cellSpacing = 50.0; // Side length of cells
+    float cellSpacing = 45.0; // Side length of cells
 
     float moveHeight = 20.0;
-    float hoverHeight = -0.0;
+    float hoverHeight = -5.0;
     
     unsigned int dwellTime = 2000;
-    
-    // For adjustments
-    int horizontalOffset = 0;
-    int leftOffset = 0;
-    int rightOffset = 0;
 } boardConfig;
 
 class SmartServo {
@@ -264,16 +259,16 @@ public:
     void moveTo(float x, float y, float z, int stepDelay = 20) {
         inverseOperation(x, y, z);
         
-        left.writeAngleSmooth(constrain(angle_left + boardConfig.leftOffset, 0, 170), stepDelay);
+        left.writeAngleSmooth(constrain(angle_left, 0, 170), stepDelay);
         delay(500);
-        horizontal.writeAngleSmooth(constrain(angle_horizontal + boardConfig.horizontalOffset, 0, 180), stepDelay);
+        right.writeAngleSmooth(constrain(angle_right, 0, 95), stepDelay);
         delay(500);
-        right.writeAngleSmooth(constrain(angle_right + boardConfig.rightOffset, 0, 95), stepDelay);
+        horizontal.writeAngleSmooth(constrain(angle_horizontal, 0, 180), stepDelay);
     }
     
     // Move to designated cell
     void moveToCell(int row, int col, float height) {
-        float x = boardConfig.centerX + (1 - row) * boardConfig.cellSpacing;
+        float x = boardConfig.centerX + (1 - row) * boardConfig.cellSpacing * 1.1;
         float y = boardConfig.centerY - height;
         float z = boardConfig.centerZ - (1 - col) * boardConfig.cellSpacing;
         
@@ -296,8 +291,8 @@ public:
         // 在起点夹取棋子
         claw.writeAngle(25);
         delay(500);
-        moveTo(boardConfig.homeX, boardConfig.homeY - 5, boardConfig.homeZ, 30);
-        claw.writeAngle(0);
+        moveTo(boardConfig.homeX, boardConfig.homeY, boardConfig.homeZ, 30);
+        claw.writeAngleSmooth(0);
         delay(500);
 
         // 移动到悬停位置
@@ -307,17 +302,22 @@ public:
         // 在棋盘高度落子
         // moveToCell(row, col, boardConfig.moveHeight);
         // delay(500);
-        claw.writeAngle(25);
+        claw.writeAngleSmooth(25);
         delay(500);
         
         // 抬起
         moveToCell(row, col, boardConfig.hoverHeight - 15);
-        homePosition();
+        moveBack(boardConfig.homeX, boardConfig.homeY + 30, boardConfig.homeZ, 30);
     }
     
-    // 初始化位置
-    void homePosition() {
-        moveTo(boardConfig.homeX, boardConfig.homeY + 30, boardConfig.homeZ, 30);
+    void moveBack(float x, float y, float z, int stepDelay = 20) {
+        inverseOperation(x, y, z);
+        
+        horizontal.writeAngleSmooth(constrain(angle_horizontal, 0, 180), stepDelay);
+        delay(500);
+        right.writeAngleSmooth(constrain(angle_right, 0, 95), stepDelay);
+        delay(500);
+        left.writeAngleSmooth(constrain(angle_left, 0, 170), stepDelay);
     }
 };
 
@@ -337,14 +337,14 @@ void setup() {
     Serial.begin(9600);
     
     left.begin(8, 73);
-    right.begin(9, 103);
-    horizontal.begin(10, 27);
+    right.begin(9, 111);
+    horizontal.begin(10, 6);
     claw.begin(11, 0);
     
     joystick1.begin();
     joystick2.begin();
     
-    arm.homePosition();
+    arm.moveBack(boardConfig.homeX, boardConfig.homeY + 30, boardConfig.homeZ, 30);;
     
     Serial.println("========================================");
     Serial.println("        Dolphin Tic-Tac-Toe Game        ");
@@ -429,7 +429,7 @@ void startGame() {
 
 void endGame() {
     currentState = GAME_OVER;
-    arm.homePosition();
+    arm.moveBack(boardConfig.homeX, boardConfig.homeY + 30, boardConfig.homeZ, 30);;
     Serial.println("\nGame ended!");
     delay(2000);
     Serial.println("\nLong press two buttons to start a new game!");
