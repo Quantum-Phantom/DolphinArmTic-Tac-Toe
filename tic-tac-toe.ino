@@ -505,7 +505,7 @@ bool processHumanInput() {
             Serial.println("Invalid input! Row/Column must be 0-2");
             return false;
         }
-    } else if (joystick2.refresh()) { // Input by button
+    } else if (abs(512 - joystick1.getX()) > 400 || abs(512 - joystick1.getY()) > 400) { // Input by button
         receivedInput = true;
         if (pressCount > 8) {
             Serial.println("Invalid input! Press 0~8 times");
