@@ -2,7 +2,7 @@
 
 // Parameters
 struct BoardConfig {
-    float centerX = -180.0;
+    float centerX = -190.0;
     float centerY = 0.0; // Vertical
     float centerZ = 0.0;
     
@@ -10,10 +10,10 @@ struct BoardConfig {
     float homeY = -24.0;
     float homeZ = -140.0;
 
-    float cellSpacing = 45.0; // Side length of cells
+    float cellSpacing = 40.0; // Side length of cells
 
     float moveHeight = 20.0;
-    float hoverHeight = -5.0;
+    float hoverHeight = -8.0;
     
     unsigned int dwellTime = 2000;
 } boardConfig;
@@ -365,12 +365,12 @@ void loop() {
 
     now = millis();
 
-    if (currentState != GAME_RUNNING) {
-        left.increment(map(joystick1.getX(), 0, 1023, -4, 4));
-        right.increment(map(joystick1.getY(), 0, 1023, -4, 4));
-        horizontal.increment(map(joystick2.getX(), 0, 1023, -4, 4));
-        claw.increment(map(joystick2.getY(), 0, 1023, -8, 8));
-    }
+    // if (currentState != GAME_RUNNING) {
+    //     left.increment(map(joystick1.getX(), 0, 1023, -4, 4));
+    //     right.increment(map(joystick1.getY(), 0, 1023, -4, 4));
+    //     horizontal.increment(map(joystick2.getX(), 0, 1023, -4, 4));
+    //     claw.increment(map(joystick2.getY(), 0, 1023, -8, 8));
+    // }
 
     if (joystick1.refresh() && joystick1.startTime <= 0) {
         joystick1.startTime = now;
