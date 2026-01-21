@@ -6,8 +6,8 @@
 
 ## 硬件要求
 
-- Arduino 开发板（如 Arduino Uno、Mega 等）
-- 4个舵机（水平旋转、左臂、右臂、夹爪）
+- Arduino Uno开发板
+- 4个舵机（底座旋转、大臂、小臂、夹爪）
 - 2个摇杆模块（带按钮）
 - 机械臂结构
 - 连接线
@@ -18,7 +18,7 @@
 |------|------|
 | 大臂舵机 | 8 |
 | 小臂舵机 | 9 |
-| 水平旋转舵机 | 10 |
+| 底座旋转舵机 | 10 |
 | 夹爪舵机 | 11 |
 
 ## 摇杆连接
@@ -30,9 +30,18 @@
 
 ## 构建方法
 
-使用Arduino IDE参考[该教程](http://www.hellostem.cn/?software/bianchengruanjianidexiazai.html)。
+**方法一**  使用Arduino IDE，安装和配置过程详见[此教程](http://www.hellostem.cn/?software/bianchengruanjianidexiazai.html)。下载`tic-tac-toe.ino`并编译、上传至开发板。
 
-使用arduino-cli推荐Visual Studio Code的[Arduino Maker Workshop](https://marketplace.visualstudio.com/items?itemName=TheLastOutpostWorkshop.arduino-maker-workshop)插件。也可通过项目中的`sketch.yaml`所给profile自行编译和上传。
+**方法二**  使用arduino-cli。下载和配置好arduino-cli后运行
+
+```powershell
+arduino-cli core install arduino:avr@1.8.6
+arduino-cli lib install "Servo@1.3.0"
+```
+
+下载开发平台和库。下载`tic-tac-toe.ino`，用`arduino-cli compile`命令编译。
+
+**方法三 (推荐)** 使用Visual Studio Code和[Arduino Maker Workshop](https://marketplace.visualstudio.com/items?itemName=TheLastOutpostWorkshop.arduino-maker-workshop)插件。下载或克隆整个仓库，使用插件选择`sketch.yaml`作为profile编译，将自动下载所需开发平台和库。
 
 ## 可调整参数
 
@@ -51,7 +60,7 @@ struct BoardConfig {
     float cellSpacing = 45.0; // Side length of cells
 
     float moveHeight = 20.0;
-    float hoverHeight = -5.0;
+    float hoverHeight = -8.0;
     
     unsigned int dwellTime = 2000;
 } boardConfig;
@@ -72,15 +81,15 @@ struct BoardConfig {
 #### 高度参数
 - `moveHeight`: 下子时夹爪距离棋盘的高度
   - 如果夹爪上安装了印章，需要确保印章能接触到棋盘
-  - 建议初始值80mm，根据实际情况微调
+  - 根据实际情况调整
   
 - `hoverHeight`: 移动时的悬停高度
   - 需要高于棋盘上已有的棋子
-  - 建议120-150mm
+  - 根据实际情况调整
 
 #### 时间参数
 - `dwellTime`: 下子后停留时间（毫秒）
-  - 用于确保印章清晰地盖在棋盘上
+  - 用于确保棋子在夹爪处于静止状态时精准落下
   - 建议2000-3000ms
 
 ## 使用方法
@@ -95,26 +104,27 @@ struct BoardConfig {
 ### 2. 游戏流程
 
 - **机械臂先手（X）**：程序会自动计算最佳位置并执行下子
-- **人类后手（O）**：在串口监视器中输入位置
+- **人类后手（O）**：通过串口监视器或摇杆输入位置
 
 ### 3. 人类玩家输入格式
 
-在串口监视器中输入：**行号 列号**
+1. 在串口监视器中输入：**行号 列号**
 
 - 行号和列号都是 **0-2** 之间的数字
 - 用空格分隔
-- 例如：
-  - `1 1` - 中间格子
-  - `0 0` - 左上角
-  - `2 1` - 下方中间格子
+ 
+2. 短按摇杆1的按钮0至8次，再短按摇杆2的按钮
 
-*或者* 短按摇杆1的按钮0至8次 (分别对应棋盘从上到下、从左到右的格子)，再短按摇杆2的按钮。
+第1行是距机械臂最近的一行。例如：
+- `1 1` 或 次数 = 4 - 中间格子
+- `0 0` 或 次数 = 0 - 左上角
+- `2 1` 或 次数 = 7 - 下方中间格子
 
 **棋盘坐标示意图：**
 ```
-0-[0,0] 1-[0,1] 2-[0,2]
-3-[1,0] 4-[1,1] 5-[1,2]
-6-[2,0] 7-[2,1] 8-[2,2]
+0/[0,0] 1/[0,1] 2/[0,2]
+3/[1,0] 4/[1,1] 5/[1,2]
+6/[2,0] 7/[2,1] 8/[2,2]
 ```
 
 ### 4. 游戏结束
@@ -127,9 +137,9 @@ struct BoardConfig {
 
 ## 机械臂下子动作流程
 
-1. 在起点夹取棋子
+1. 确保移动到起点，收紧夹爪夹取棋子
 2. 移动到悬停位置（在棋盘某格正上方）
-3. 抬起并返回起点
+3. 放松夹爪落子并返回起点
 
 ## 机械臂AI策略
 
@@ -140,7 +150,7 @@ struct BoardConfig {
 3. **优先占中心** - 中心位置最有利
 4. **优先占角落** - 角落位置次之
 5. **占边** - 边缘位置
-6. **找空位** - 实在没办法时的选择
+6. **找空位** - 实在没办法时选择按编号递增顺序查找
 
 ## 调试技巧
 
