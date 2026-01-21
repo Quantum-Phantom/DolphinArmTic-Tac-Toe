@@ -16,8 +16,8 @@
 
 | 舵机 | 引脚 |
 |------|------|
-| 左臂舵机 | 8 |
-| 右臂舵机 | 9 |
+| 大臂舵机 | 8 |
+| 小臂舵机 | 9 |
 | 水平旋转舵机 | 10 |
 | 夹爪舵机 | 11 |
 
@@ -30,7 +30,9 @@
 
 ## 构建方法
 
-推荐使用Visual Studio Code的[Arduino Maker Workshop](https://marketplace.visualstudio.com/items?itemName=TheLastOutpostWorkshop.arduino-maker-workshop)插件。也可通过项目中的`sketch.yaml`所给profile自行使用`arduino-cli`编译和上传。
+使用Arduino IDE参考[该教程](http://www.hellostem.cn/?software/bianchengruanjianidexiazai.html)。
+
+使用arduino-cli推荐Visual Studio Code的[Arduino Maker Workshop](https://marketplace.visualstudio.com/items?itemName=TheLastOutpostWorkshop.arduino-maker-workshop)插件。也可通过项目中的`sketch.yaml`所给profile自行编译和上传。
 
 ## 可调整参数
 
@@ -38,20 +40,20 @@
 
 ```cpp
 struct BoardConfig {
-    float centerX = 150.0;
-    float centerY = 200.0;
+    float centerX = -180.0;
+    float centerY = 0.0; // Vertical
     float centerZ = 0.0;
     
-    float cellSpacing = 30.0;
-    
-    float moveHeight = 80.0;
-    float hoverHeight = 120.0;
+    float homeX = -220.0;
+    float homeY = -24.0;
+    float homeZ = -140.0;
+
+    float cellSpacing = 45.0; // Side length of cells
+
+    float moveHeight = 20.0;
+    float hoverHeight = -5.0;
     
     unsigned int dwellTime = 2000;
-    
-    int horizontalOffset = 0;
-    int leftOffset = 0;
-    int rightOffset = 0;
 } boardConfig;
 ```
 
@@ -81,11 +83,6 @@ struct BoardConfig {
   - 用于确保印章清晰地盖在棋盘上
   - 建议2000-3000ms
 
-#### 舵机偏移参数
-- `horizontalOffset`, `leftOffset`, `rightOffset`: 舵机角度偏移
-  - 用于微调机械臂的精度
-  - 如果机械臂下子位置有偏差，可以通过这些参数校正
-
 ## 使用方法
 
 ### 1. 开始游戏
@@ -111,11 +108,13 @@ struct BoardConfig {
   - `0 0` - 左上角
   - `2 1` - 下方中间格子
 
+*或者* 短按摇杆1的按钮
+
 **棋盘坐标示意图：**
 ```
-[0,0] [0,1] [0,2]
-[1,0] [1,1] [1,2]  
-[2,0] [2,1] [2,2]
+0-[0,0] 1-[0,1] 2-[0,2]
+3-[1,0] 4-[1,1] 5-[1,2]
+6-[2,0] 7-[2,1] 8-[2,2]
 ```
 
 ### 4. 游戏结束
@@ -128,9 +127,9 @@ struct BoardConfig {
 
 ## 机械臂下子动作流程
 
-1. 
-2. 
-3. 
+1. 在起点夹取棋子
+2. 移动到悬停位置（在棋盘某格正上方）
+3. 抬起并返回起点
 
 ## 机械臂AI策略
 
@@ -174,7 +173,7 @@ struct BoardConfig {
 3. **确保电源能提供足够电流**（4个舵机同时工作时电流较大）
 4. **建议在机械臂周围设置防护栏**
 
-## 扩展功能
+## 可扩展功能
 
 ### 添加声音提示
 可以在关键步骤添加蜂鸣器提示音：
